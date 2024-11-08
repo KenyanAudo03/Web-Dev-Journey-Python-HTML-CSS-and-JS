@@ -11,6 +11,9 @@ import math
 #STRINGS
 city = "nair|obi"
 print(city)
+print(city.find("a"))
+print(city.count("a"))
+print(type(city))
 print(len(city))
 print(city[2])
 print(city[4:])
