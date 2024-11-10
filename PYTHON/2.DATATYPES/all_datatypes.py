@@ -1,10 +1,9 @@
 # 1. Strings
 # 2. Numbers( Int, Complex, Float)
 # 3. Boolean
-# 4. Long
-# 5. Lists
-# 7. Tuples
-# 8. Dictionary
+# 4. Lists
+# 5. Tuples
+# 6. Dictionary
 import math
 
 
@@ -46,3 +45,57 @@ isWorking = True
 print(isWorking)
 isWorking = False
 print(isWorking)
+
+# #LISTS
+
+myList = [1,2,3,"book","pencil","spoon"]
+list2 = ["laptop","sweets",6,"normal"]
+
+myList.append("danger")
+myList.pop()
+myList.remove("book")
+myList.pop(4)
+myList.sort()
+myList.reverse()
+
+print(len(myList))
+myList.insert(2, "stationary")
+myList.extend(list2)
+
+print(myList)
+
+
+
+# # #TUPLES
+
+myTuple = (1,2,3,4,5,3,"money")
+print(myTuple)
+print(myTuple[3])
+print(myTuple.count(3))
+
+#DICTIONARY
+
+myDict = {
+    "name" : "Victor",
+    "city" : "Kiambu",
+    "hobby" : "Music",
+    "fruit" : "pineapples"
+}
+dict2 = {
+    "sex" : "Male"
+}
+print(myDict.update(dict2))
+print(myDict["city"])
+myDict["city"] = "Nairobi"
+del myDict["fruit"]
+print(myDict)
+
+print(myDict.get("hobby"))
+print(myDict.clear())
+print(len(myDict))
+
+seq = ("name", "sex", "age")
+dict = dict.fromkeys(seq)
+print(dict)
+dict = dict.fromkeys(seq, 10)
+print(dict)
