@@ -99,3 +99,19 @@ dict = dict.fromkeys(seq)
 print(dict)
 dict = dict.fromkeys(seq, 10)
 print(dict)
+
+day_number = int(input("Enter a number: "))
+
+def week(day_number):
+    days_of_the_week = {
+        1: "Monday",
+        2: "Tuesday",
+        3: "Wednesday",
+        4: "Thursday",
+        5: "Friday",
+        6: "Saturday",
+        7: "Sunday"
+    }
+    return days_of_the_week.get(day_number, "Invalid Day Number")
+
+print(week(day_number))
